@@ -1,0 +1,54 @@
+body {
+    background-color: #e7f3ff; /* Blue background */
+    color: white; /* Ensure text is readable */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 450px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    color: black; /* Ensure text inside chat-box is readable */
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.user-message {
+    text-align: right;
+    color: black;
+    background-color: #dddddd;
+    align-self: flex-end;
+    max-width: 80%;
+    padding: 10px 10px;
+    border-radius: 15px 15px 0 15px;
+    margin-top: 20px;
+}
+
+.response-message {
+    text-align: left;
+    color: black;
+    background-color: #dddddd;
+    align-self: flex-start;
+    max-width: 80%;
+    padding: 10px 10px;
+    border-radius: 15px 15px 15px 0;
+    margin-top: 10px;
+}
+
+.card {
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    color: black; /* Ensure text inside card is readable */
+}

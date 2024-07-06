@@ -1,0 +1,13 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT run:app --timeout 300
+
+env_variables:
+  CLOUD_SQL_USERNAME: appengine
+  CLOUD_SQL_PASSWORD: RedHorse1!
+  CLOUD_SQL_DATABASE_NAME: service
+  CLOUD_SQL_CONNECTION_NAME: fresh-almanac-413209:me-west1:mvp-db
+  SQLALCHEMY_DATABASE_URI: >-
+    mysql+pymysql://appengine:RedHorse1!@/service?unix_socket=/cloudsql/fresh-almanac-413209:me-west1:mvp-db
+
+beta_settings:
+  cloud_sql_instances: me-west1:mvp-db
